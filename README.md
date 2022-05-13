@@ -1,0 +1,2 @@
+# RegExKick
+$RegExKickNonAscii = "(?i)([^a-z0-9-_])" ; all but a-z0-9-_ forbidden  [...] $FileNameWithExt = StringTrimLeft($ZipArchiv, StringInStr($ZipArchiv, "\", 0, -1)) $FileExt = StringTrimLeft($FileNameWithExt, StringInStr($FileNameWithExt, ".", 0, -1)) $FileName = StringLeft($FileNameWithExt, StringInStr($FileNameWithExt, ".", 0, -1) - 1) $FileNameAsciiClean = StringRegExpReplace($FileName, $RegExKickNonAscii, "") &amp; "." &amp; $FileExt ; replace-with = "" means "kick" not wanted chars. [...]
